@@ -36,13 +36,19 @@ if (p >= 0)
 } else {
 	viesti = "Ansaitsin Suuren Ansioristin pisteillä " + (p*-1) + "!";
 }
+FB.init({
+        appId: '1407920049478296',
+        status: true,
+        cookie: true,
+        xfbml: true
+    });
 
 FB.ui(
   {
     method: 'feed',
     name: 'Partiopolku',
     link: 'http://tuisku.pohjanmaa.partio.fi/2048/',
-    picture: 'https://scontent-b-fra.xx.fbcdn.net/hphotos-prn2/t1.0-9/1544351_555767371187554_1617883906_n.png',
+    picture: 'http://tuisku.pohjanmaa.partio.fi/2048/img/image.png',
     caption: '' + viesti + '',
     description: 'Selvi&auml;tk&ouml; Partiopolun loppuun asti? Partioaiheinen klooni 2048-pelistä'
   },

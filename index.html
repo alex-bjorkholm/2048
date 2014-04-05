@@ -1,18 +1,28 @@
 ﻿<!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
 <head>
-  <meta charset="utf-8">
-  <title>Partiopolku</title>
+    <meta charset="utf-8">
+    <title>Partiopolku</title>
 
-  <link href="style/main.css" rel="stylesheet" type="text/css">
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
-  <meta name="apple-mobile-web-app-capable" content="yes">
+    <link href="style/main.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
 
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
-  <meta property="fb:app_id" content="1407920049478296"/>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+    <meta property="fb:app_id" content="1407920049478296"/>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-49726097-1', 'partio.fi');
+        ga('send', 'pageview');
+
+    </script>
 </head>
 <div style="text-align: center;" id="fb-root"></div>
 <script>
@@ -30,94 +40,95 @@
         js = d.createElement(s); js.id = id;
         js.src = "//connect.facebook.net/fi_FI/all.js#xfbml=1&appId=1407920049478296";
         fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+    }(document, 'script', 'facebook-jssdk'));
+</script>
 
 <body>
-  <div class="container">
+<div class="container">
     <div class="heading">
-      <h1 class="title">Partiopolku</h1>
-      <div class="scores-container">
-        <div class="score-container">0</div>
-        <div class="best-container">0</div>
-      </div>
+        <h1 class="title">Partiopolku</h1>
+        <div class="scores-container">
+            <div class="score-container">0</div>
+            <div class="best-container">0</div>
+        </div>
     </div>
 
     <div class="above-game">
-      <p class="game-intro">Yhdistä samat ikäkaudet. Saatko <strong>suuren ansioristin?</strong></p>
-      <a class="restart-button">Uusi peli</a>
+        <p class="game-intro">Yhdistä samat ikäkaudet. Saatko <strong>suuren ansioristin?</strong></p>
+        <a class="restart-button">Uusi peli</a>
     </div>
 
     <div class="game-container">
-      <div class="game-message">
-          <h3></h3>
-          <h4></h4>
-          <a></a>
-        <div class="lower">
-	        <a class="keep-playing-button">Jatka partiouraa</a>
-          <a class="retry-button">Uudestaan sudariksi</a>
+        <div class="game-message">
+            <h3></h3>
+            <h4></h4>
+            <a></a>
+            <div class="lower">
+                <a class="keep-playing-button">Jatka partiouraa</a>
+                <a class="retry-button">Uudestaan sudariksi</a>
+            </div>
         </div>
-      </div>
 
-      <div class="grid-container">
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
+        <div class="grid-container">
+            <div class="grid-row">
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+            </div>
+            <div class="grid-row">
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+            </div>
+            <div class="grid-row">
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+            </div>
+            <div class="grid-row">
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+            </div>
         </div>
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-        </div>
-      </div>
 
-      <div class="tile-container">
+        <div class="tile-container">
 
-      </div>
+        </div>
     </div>
 
     <p class="game-explanation">
-      <strong class="important">Ohjeet:</strong> Käytä <strong>nuolinäppäimiä</strong> liikuttaaksesi laattoja. Kun kaksi samanlaista laattaa kohtaa, ne <strong>yhdistyvät uudeksi!</strong>
+        <strong class="important">Ohjeet:</strong> Käytä <strong>nuolinäppäimiä</strong> liikuttaaksesi laattoja. Kun kaksi samanlaista laattaa kohtaa, ne <strong>yhdistyvät uudeksi!</strong>
     </p>
     <hr />
     <p>
-    	Partioon kannattaa liittyä myös oikeasti. Se on ehkä jopa hauskempaa, kuin tämä peli.<br>
-    	<a href="http://www.partio.fi/tule-mukaan">Liity partioon &raquo;</a>
+        Partioon kannattaa liittyä myös oikeasti. Se on ehkä jopa hauskempaa, kuin tämä peli.<br>
+        <a href="http://www.partio.fi/tule-mukaan">Liity partioon &raquo;</a>
     </p>
     <hr>
     <p>
-    <strong class="important">Huom:</strong> Tämä on epävirallnen modaus alkuperäisestä 2048-pelistä, jonka löydät <a href="http://gabrielecirulli.github.io/2048/">täältä.</a>
+        <strong class="important">Huom:</strong> Tämä on epävirallnen modaus alkuperäisestä 2048-pelistä, jonka löydät <a href="http://gabrielecirulli.github.io/2048/">täältä.</a>
     </p>
     <hr>
     <p>
-    Modannut Arttu Tanner ja Janne Seppänen.<br/> Original game by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a> Based on<a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a>
+        Modannut Arttu Tanner ja Janne Seppänen.<br/> Original game by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a> Based on<a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a>
     </p>
-  </div>
+</div>
 
-  <script src="js/bind_polyfill.js"></script>
-  <script src="js/classlist_polyfill.js"></script>
-  <script src="js/animframe_polyfill.js"></script>
-  <script src="js/keyboard_input_manager.js"></script>
-  <script src="js/html_actuator.js"></script>
-  <script src="js/grid.js"></script>
-  <script src="js/tile.js"></script>
-  <script src="js/local_storage_manager.js"></script>
-  <script src="js/game_manager.js"></script>
-  <script src="js/application.js"></script>
-  <script src="js/jaa.js"></script>
+<script src="js/bind_polyfill.js"></script>
+<script src="js/classlist_polyfill.js"></script>
+<script src="js/animframe_polyfill.js"></script>
+<script src="js/keyboard_input_manager.js"></script>
+<script src="js/html_actuator.js"></script>
+<script src="js/grid.js"></script>
+<script src="js/tile.js"></script>
+<script src="js/local_storage_manager.js"></script>
+<script src="js/game_manager.js"></script>
+<script src="js/application.js"></script>
+<script src="js/jaa.js"></script>
 </body>
 </html>
