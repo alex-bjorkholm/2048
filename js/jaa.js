@@ -1,31 +1,27 @@
 function juojana(p)
 {
-var s = "Sudari";
-if (p >= 500) s = "Seikkailija";
-if (p >= 1000) s = "Tarpoja";
-if (p >= 1500) s = "Samoaja";
-if (p >= 2000) s = "Vaeltaja";
-if (p >= 2500) s = "Aikuinen";
-if (p >= 3000) s = "Partiojohtaja";
-if (p >= 3500) s = "Lintukansaa";
-if (p >= 4000) s = "XXX";
-if (p >= 4500) s = "XXX";
-if (p >= 5000) s = "XXX";
-if (p >= 5500) s = "XXX";
-if (p >= 6000) s = "XXX";
-if (p >= 6500) s = "XXX";
-if (p >= 7000) s = "XXX";
-if (p >= 7500) s = "XXX";
-if (p >= 8000) s = "XXX";
-if (p >= 8500) s = "XXX";
-if (p >= 9000) s = "XXX";
-if (p >= 9500) s = "XXX";
-if (p >= 11000) s = "XXX";
-if (p >= 12500) s = "XXX";
-if (p >= 15000) s = "XXX XXX";
-if (p >= 17500) s = "XXX XXX";
-if (p >= 20000) s = "XXX XXX";
-if (p >= 25000) s = "XXX";
+var s = "Sudenpentu"                      ;
+if (p >= 500) s   =  "Nokkapentu"                      ;
+if (p >= 1000) s  =  "Seikkailija"                     ;
+if (p >= 1500) s  =  "Seikkailijakonkari"              ;
+if (p >= 2000) s  =  "Tarpoja"                         ;
+if (p >= 2500) s  =  "Supertarpoja"                    ;
+if (p >= 3000) s  =  "Samoaja"                         ;
+if (p >= 4000) s  =  "Konkarisamoaja"                  ;
+if (p >= 5000) s  =  "Vaeltaja"                        ;
+if (p >= 6000) s  =  "Vaeltajavartion johtaja"         ;
+if (p >= 6500) s  =  "Aloitteleva aikuinen tuki"       ;
+if (p >= 7000) s  =  "Tukeva aikuinen"                 ;
+if (p >= 8000) s  =  "Partiojohtaja"                   ;
+if (p >= 8500) s  =  "Lintukansaa"                     ;
+if (p >= 9000) s  =  "Piirin luottis"                  ;
+if (p >= 9500) s  =  "SP:n luottis"                    ;
+if (p >= 11000) s =  "SP:n hallituksen jäsen"          ;
+if (p >= 12500) s =  "Partioneuvos"                    ;
+if (p >= 15000) s =  "Oikeassaolevien Neuvoston Jäsen" ;
+if (p >= 17500) s =  "Kymmenen nappulan jäärä"         ;
+if (p >= 20000) s =  "Gilwell Parkin johtaja"          ;
+if (p >= 25000) s =  "Baden-Powell"                    ;
 return s;
 }
 
@@ -38,7 +34,7 @@ if (p >= 0)
 {
 	viesti = 'Sain partioindeksikseni ' + p + ' ja olen siis tasoltani ' + s;
 } else {
-	viesti = "Ansaitsin Suuren Ansioristin indeksini ollessa " + (p*-1) + "!";
+	viesti = "Ansaitsin Suuren Ansioristin pisteillä " + (p*-1) + "!";
 }
 
 FB.ui(
