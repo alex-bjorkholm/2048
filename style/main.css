@@ -402,7 +402,7 @@ hr {
         font-size: 15px; } }
 .tile.tile-super .tile-inner {
 
-    background: #fff url('../img/super.png');
+    background: #6a738c url('../img/4096.png');
     background-size: cover;
     font-size: 30px; }
 @media screen and (max-width: 480px) {
