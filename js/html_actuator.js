@@ -130,20 +130,20 @@ HTMLActuator.prototype.message = function (won) {
 
     var luokittelu;
     if (won) {
-        message = "Voitit Partion!";
-        luokittelu = "Olet ultimaattinen partiomestari!";
+        message = "Du vann scoutingen!";
+        luokittelu = "Du är den ultimata scoutmästaren!";
 
     } else {
         var s = juojana(this.score);
-        message = "Erosit partiosta!";
-        luokittelu = "Partioindeksisi on " + s;
+        message = "Du hoppade av scoutingen!";
+        luokittelu = "Ditt scoutindex är " + s;
 
     }
 
     this.messageContainer.classList.add(type);
     this.messageContainer.getElementsByTagName("h3")[0].textContent = message;
     this.messageContainer.getElementsByTagName("h4")[0].textContent = luokittelu;
-    this.messageContainer.getElementsByTagName("a")[0].textContent = "Jaa tulos Facebookissa!";
+    this.messageContainer.getElementsByTagName("a")[0].textContent = "Dela på Facebook!";
     this.messageContainer.getElementsByTagName("a")[0].href = "#";
 
     var tmpscore = this.score;
