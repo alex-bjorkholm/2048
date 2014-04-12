@@ -1,26 +1,26 @@
 function juojana(p)
 {
-var s = "Sudenpentu"                      ;
-if (p >= 500) s   =  "Nokkapentu"                      ;
-if (p >= 1000) s  =  "Seikkailija"                     ;
-if (p >= 1500) s  =  "Seikkailijakonkari"              ;
-if (p >= 2000) s  =  "Tarpoja"                         ;
-if (p >= 2500) s  =  "Supertarpoja"                    ;
-if (p >= 3000) s  =  "Samoaja"                         ;
-if (p >= 4000) s  =  "Konkarisamoaja"                  ;
-if (p >= 5000) s  =  "Vaeltaja"                        ;
-if (p >= 6000) s  =  "Vaeltajavartion johtaja"         ;
-if (p >= 6500) s  =  "Aloitteleva aikuinen tuki"       ;
-if (p >= 7000) s  =  "Tukeva aikuinen"                 ;
-if (p >= 8000) s  =  "Partiojohtaja"                   ;
-if (p >= 8500) s  =  "Lintukansaa"                     ;
-if (p >= 9000) s  =  "Piirin luottis"                  ;
-if (p >= 9500) s  =  "SP:n luottis"                    ;
-if (p >= 11000) s =  "SP:n hallituksen jäsen"          ;
-if (p >= 12500) s =  "Partioneuvos"                    ;
-if (p >= 15000) s =  "Oikeassaolevien Neuvoston Jäsen" ;
-if (p >= 17500) s =  "Kymmenen nappulan jäärä"         ;
-if (p >= 20000) s =  "Gilwell Parkin johtaja"          ;
+var s = "Vargunge"                      ;
+if (p >= 500) s   =  "Mästarvargunge"                  ;
+if (p >= 1000) s  =  "Äventyrsscout"                   ;
+if (p >= 1500) s  =  "Äventyrligaste äventyrsscouten"  ;
+if (p >= 2000) s  =  "Spejarscout"                     ;
+if (p >= 2500) s  =  "Superspejarscout"                ;
+if (p >= 3000) s  =  "Explorerscout"                   ;
+if (p >= 4000) s  =  "Extremaste explorerscouten"      ;
+if (p >= 5000) s  =  "Roverscout"                      ;
+if (p >= 6000) s  =  "Ledare av en roverscoutpatrull"  ;
+if (p >= 6500) s  =  "Scoutledarpotential"             ;
+if (p >= 7000) s  =  "Vuxet stöd"                      ;
+if (p >= 8000) s  =  "Scoutledare"                     ;
+if (p >= 8500) s  =  "En av fågelfolket"               ;
+if (p >= 9000) s  =  "Förtroendevald i FiSSc"          ;
+if (p >= 9500) s  =  "Förtroendevald i FS"             ;
+if (p >= 11000) s =  "Medlem i FS styrelse  "          ;
+if (p >= 12500) s =  "Scoutråd"                        ;
+if (p >= 15000) s =  "Medlem i de bättre vetandes råd" ;
+if (p >= 17500) s =  "En med närmare 10 knappar"       ;
+if (p >= 20000) s =  "Ledare för Gilwell Park"         ;
 if (p >= 25000) s =  "Baden-Powell"                    ;
 return s;
 }
@@ -32,12 +32,12 @@ var s = juojana(p);
 var viesti;
 if (p >= 0)
 {
-	viesti = 'Sain partioindeksikseni ' + p + ' ja olen siis tasoltani ' + s;
+	viesti = 'Jag fick scoutindexet' + p + ' och jag är alltså av nivån ' + s;
 } else {
-	viesti = "Ansaitsin Suuren Ansioristin pisteillä " + (p*-1) + "!";
+	viesti = "Jag fick Stora förtjänstkorset med poängen " + (p*-1) + "!";
 }
 FB.init({
-        appId: '1407920049478296',
+        appId: '1407920049478296',  #EXCHANGE THIS!
         status: true,
         cookie: true,
         xfbml: true
@@ -46,17 +46,17 @@ FB.init({
 FB.ui(
   {
     method: 'feed',
-    name: 'Partiopolku',
-    link: 'http://tuisku.pohjanmaa.partio.fi/2048/',
-    picture: 'http://tuisku.pohjanmaa.partio.fi/2048/img/image.png',
+    name: 'Scoutstigen',
+    link: 'http://fissc.fi/2048/',
+    picture: 'http://fissc.fi/2048/img/image.png',
     caption: '' + viesti + '',
-    description: 'Selvi&auml;tk&ouml; Partiopolun loppuun asti? Partioaiheinen klooni 2048-pelistä'
+    description: 'Klarar du scoutstigen till slut? En scoutinspirerad klon av 2048-spelet'
   },
   function(response) {
     if (response && response.post_id) {
-      alert('Julkaisu onnistui.');
+      alert('Delandet lyckades.');
     } else {
-      alert('Tulosta ei julkaistu.');
+      alert('Delandet misslyckades.');
     }
   }
 );
