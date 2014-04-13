@@ -37,7 +37,7 @@ if (p >= 0)
 	viesti = "Jag fick Stora förtjänstkorset med poängen " + (p*-1) + "!";
 }
 FB.init({
-        appId: '1407920049478296',  #EXCHANGE THIS!
+        appId: '1407920049478296',  //EXCHANGE THIS!
         status: true,
         cookie: true,
         xfbml: true
