@@ -2,7 +2,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    background: #faf8ef url('http://www.partio.fi/sites/partio.fi/files/taustakuva_talvi_web.jpg');
+    background: #faf8ef url('http://www.scout.fi/sites/scout.fi/themes/partio/images/bg-body.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -93,10 +93,10 @@ h1.title {
     animation-fill-mode: both; }
 
 .score-container:after {
-    content: "Pisteet"; }
+    content: "Poäng"; }
 
 .best-container:after {
-    content: "Huiput"; }
+    content: "Bäst hittills"; }
 
 p {
     margin-top: 0;
